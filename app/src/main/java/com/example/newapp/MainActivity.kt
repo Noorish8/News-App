@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val items=fetchData()
         val adapter= NewsListAdapter(items,this)
         recyclerView.adapter=adapter
+        ///
     }
     private fun fetchData(): ArrayList<String> {
         //val url="https://newsapi.org/v2/everything?q=tesla&from=2021-08-06&sortBy=publishedAt&apiKey=API_KEY"
